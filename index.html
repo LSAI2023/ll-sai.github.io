@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="Zh-CN">
 <head>
-	<!--<link href="http://lsai.cc/public/favicon.ico" rel="SHORTCUT ICON">-->
-	<meta charset="utf-8">
-	<title>LSAI</title>
-	<!--
-	<link rel="icon" href="//www.lsai.cc/ll-sai.github.io/public/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="//www.lsai.cc/ll-sai.github.io/public/favicon.ico" type="image/x-icon" />
--->
-    <!--<link rel="shortcut icon" href="//www.lsai.cc/ll-sai.github.io/public/favicon.ico" mce_href="//www.lsai.cc/ll-sai.github.io/public/favicon.ico" type="image/x-icon" > -->
-     <link rel="icon" type="image/ico" href="//www.lsai.cc/ll-sai.github.io/public/favicon.ico">
+  <meta charset="utf-8">
+  <title>21-Clock</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/ico" href="//www.lsai.cc/ll-sai.github.io/public/favicon.ico">
 </head>
 <body>
-<center>
-<h1>
-<br><br><br><br><br>
-千里之行,始于足下</h1>
-</center>
+	<div class="clock"></div>
 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/flipclock.js"></script>
+	<script type="text/javascript">
+		var clock = $('.clock').FlipClock({
+			clockFace: 'TwelveHourClock'
+		});
+	</script>
 </body>
 </html>
